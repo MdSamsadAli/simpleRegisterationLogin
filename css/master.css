@@ -1,0 +1,53 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  width: 46%;
+  background: white;
+  opacity: .3;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  padding: 20px 50px;
+  border-radius: 30px;
+  transition: all .5s ease-in-out;
+}
+.container:hover {
+  opacity: 1;
+}
+.col-1 {
+  width: 90%;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.col-1 label, .col-1 input, span, a {
+  font-size: 24px;
+}
+.col-1 input {
+  padding: 10px 8px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  outline: none;
+}
+input[type = "submit"]{
+  border: 1px solid #ddd;
+  transition: all .4s ease-in-out;
+  border-radius: 20px;
+  padding: 14px 16px;
+}
+input[type = "submit"]:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
